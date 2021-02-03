@@ -6,6 +6,7 @@
             fetch('https:/luegil.github.io/web1/index.html').then(
                 function(response){
                    response.text().then(function(text){//응답받은 text를(페치한 사이트 홈화면 HTML)
+                          console.log(text);
                            document.querySelector('article').innerHTML= text;
                            //이 HTML의 article 태그에 텍스트적기
                         }
